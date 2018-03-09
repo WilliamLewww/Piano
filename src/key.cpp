@@ -24,6 +24,18 @@ SDL_Keycode Key::getKeyboardKey() {
 	return linkedKeyboardKey;
 }
 
+bool Key::checkPress() {
+	return isPressed;
+}
+
+void Key::handlePress() {
+	isPressed = true;
+
+	if (!input.checkKeyDown(linkedKeyboardKey)) {
+		isPressed = false;
+	}
+}
+
 void Key::draw() {
 	if (isPressed) {
 		drawPressed();

@@ -7,7 +7,7 @@ void Joiner::initialize() {
 }
 
 void Joiner::update(int elapsedTime) {
-
+	piano.update();
 }
 
 void Joiner::draw() {

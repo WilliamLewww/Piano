@@ -25,5 +25,7 @@ public:
 	void setKeyboardKey(SDL_Keycode keycode);
 	SDL_Keycode getKeyboardKey();
 
+	bool checkPress();
+	void handlePress();
 	void draw();
 };
