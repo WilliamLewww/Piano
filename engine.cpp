@@ -6,6 +6,9 @@ void Engine::initialize() {
 	displayWindow = SDL_CreateWindow("Piano", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, configuration.getScreenWidth(), configuration.getScreenHeight(), SDL_WINDOW_OPENGL);
 	displayContext = SDL_GL_CreateContext(displayWindow);
 	glOrtho(-configuration.getScreenWidth() / 2, configuration.getScreenWidth() / 2, configuration.getScreenHeight() / 2, -configuration.getScreenHeight() / 2, 0, 1);
+	
+	initializeWindowHandle();
+	initializeAudio();
 
 	initializeExternalController();
 
@@ -13,6 +16,16 @@ void Engine::initialize() {
 	seedRandom();
 
 	joiner.initialize();
+}
+
+void Engine::initializeWindowHandle() {
+	SDL_VERSION(&wmInfo.version);
+	SDL_GetWindowWMInfo(displayWindow, &wmInfo);
+	hwnd = wmInfo.info.win.window;
+}
+
+void Engine::initializeAudio() {
+	audio.initialize(hwnd);
 }
 
 void Engine::initializeExternalController() {
@@ -39,6 +52,7 @@ void Engine::start() {
 
 void Engine::quit() {
 	SDL_Quit();
+	audio.quit();
 }
 
 void Engine::handleEvents() {

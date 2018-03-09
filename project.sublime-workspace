@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"key",
+				"keycode"
+			],
+			[
 				"drawRe",
 				"drawReleased"
 			],
@@ -428,10 +432,10 @@
 	"buffers":
 	[
 		{
-			"file": "src/joiner.cpp",
+			"file": "engine.h",
 			"settings":
 			{
-				"buffer_size": 188,
+				"buffer_size": 886,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -440,24 +444,25 @@
 			"file": "engine.cpp",
 			"settings":
 			{
-				"buffer_size": 2056,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/piano.cpp",
-			"settings":
-			{
-				"buffer_size": 2016,
+				"buffer_size": 2333,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/piano.h",
+			"file": "src/core/audio.h",
 			"settings":
 			{
-				"buffer_size": 385,
+				"buffer_size": 169,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/core/audio.cpp",
+			"settings":
+			{
+				"buffer_size": 318,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -672,27 +677,32 @@
 	"expanded_folders":
 	[
 		"/C/Projects/Piano",
-		"/C/Projects/Piano/src"
+		"/C/Projects/Piano/src",
+		"/C/Projects/Piano/src/core"
 	],
 	"file_history":
 	[
+		"/C/Projects/Piano/engine.h",
+		"/C/Projects/Piano/src/core/input.cpp",
+		"/C/Projects/Piano/src/core/input.h",
 		"/C/Projects/Piano/src/key.h",
+		"/C/Projects/Piano/src/joiner.cpp",
+		"/C/Projects/Piano/main.cpp",
+		"/C/Projects/Piano/engine.cpp",
+		"/C/Projects/Piano/project.sublime-project",
+		"/C/Projects/Piano/src/piano.cpp",
+		"/C/Projects/Piano/src/piano.h",
 		"/C/Projects/Piano/src/key.cpp",
+		"/C/Projects/Cereal/cereal_nodiv.py",
+		"/C/Libraries/bass24/c/bass.h",
 		"/C/Users/WilliamLew/.ssh/id_rsa",
 		"/C/Users/WilliamLew/.ssh/id_rsa.pub",
-		"/C/Projects/Piano/engine.cpp",
 		"/C/Projects/Piano/src/white_key.cpp",
 		"/C/Projects/Piano/src/white_key.h",
 		"/C/Projects/Piano/src/black_key.h",
-		"/C/Projects/Piano/src/piano.cpp",
-		"/C/Projects/Piano/src/piano.h",
 		"/C/Projects/Piano/src/black_key.cpp",
 		"/C/Projects/Piano/src/joiner.h",
-		"/C/Projects/Piano/src/joiner.cpp",
 		"/C/Projects/Piano/src/core/piano.h",
-		"/C/Projects/Piano/engine.h",
-		"/C/Projects/Piano/project.sublime-project",
-		"/C/Projects/Piano/main.cpp",
 		"/C/Projects/Piano/config.txt",
 		"/C/Projects/Piano/src",
 		"/C/Projects/Thane/src/drawing.cpp",
@@ -770,7 +780,6 @@
 		"/C/Projects/Mustard/src/config.txt",
 		"/C/Projects/Mustard/src/gui/config.txt",
 		"/C/Projects/Cereal/cereal.py",
-		"/C/Projects/Cereal/cereal_nodiv.py",
 		"/C/Projects/Mustard/Parallel Curves/src/vector2.cpp",
 		"/C/Projects/Mustard/Parallel Curves/src/track.h",
 		"/C/Projects/Mustard/Parallel Curves/main.cpp",
@@ -800,10 +809,7 @@
 		"/C/Users/WilliamLew/Desktop/cmu/lab2.py",
 		"/C/Users/WilliamLew/Desktop/Website/Pixel-Noise/Pixel Noise/Pixel Noise/Main.cpp",
 		"/C/Projects/ML-Perceptron/network_min.py",
-		"/C/Projects/ML-Perceptron/demo.py",
-		"/C/Users/WilliamLew/Desktop/Toucan/Kiwi/connection.h",
-		"/C/Projects/Example_Site/src/lobjects.js",
-		"/C/Projects/Example_Site/src/main.js"
+		"/C/Projects/ML-Perceptron/demo.py"
 	],
 	"find":
 	{
@@ -925,47 +931,48 @@
 			[
 				{
 					"buffer": 0,
-					"file": "src/joiner.cpp",
+					"file": "engine.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 188,
+						"buffer_size": 886,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								146,
-								146
+								600,
+								600
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.sublime-syntax"
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
 					"file": "engine.cpp",
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2056,
+						"buffer_size": 2333,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								616,
+								616
 							]
 						],
 						"settings":
@@ -979,51 +986,28 @@
 					},
 					"stack_index": 0,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
 				{
 					"buffer": 2,
-					"file": "src/piano.cpp",
+					"file": "src/core/audio.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2016,
+						"buffer_size": 169,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								666,
-								666
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/piano.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 385,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								344,
-								344
+								106,
+								106
 							]
 						],
 						"settings":
@@ -1034,7 +1018,35 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/core/audio.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 318,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								318,
+								318
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1057,11 +1069,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
