@@ -1,0 +1,99 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+				"g++",
+				"C:/Projects/Piano/main.cpp",
+				"-o",
+				"C:/Projects/Piano/main",
+				"C:/Projects/Piano/engine.cpp",
+				"C:/Projects/Piano/src/core/*.cpp",
+				"C:/Projects/Piano/src/*.cpp",
+				"-IC:/Libraries/SDL2-2.0.5-mingw/i686-w64-mingw32/include",
+				"-LC:/Libraries/SDL2-2.0.5-mingw/i686-w64-mingw32/lib",
+				"-lmingw32",
+				"-lSDL2main",
+				"-lSDL2",
+				"-lopengl32",
+				"&&",
+				"C:/Projects/Piano/main"
+			],
+			"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+			"name": "SDL Project",
+			"selector": "source.c, source.c++",
+			"shell": true,
+			"variants":
+			[
+				{
+					"cmd":
+					[
+						"g++",
+						"${file}",
+						"-o",
+						"${file_base_name}.exe",
+						"src/*.cpp",
+						"-IC:/Libraries/SDL2-2.0.5-mingw/i686-w64-mingw32/include",
+						"-LC:/Libraries/SDL2-2.0.5-mingw/i686-w64-mingw32/lib",
+						"-lmingw32",
+						"-lSDL2main",
+						"-lSDL2",
+						"-lopengl32"
+					],
+					"name": "Compile",
+					"shell": true
+				}
+				,
+				{
+					"cmd":
+					[
+						"g++",
+						"$file",
+						"-o",
+						"$file_base_name",
+						"src/*.cpp",
+						"-IC:/Libraries/SDL2-2.0.5-mingw/i686-w64-mingw32/include",
+						"-LC:/Libraries/SDL2-2.0.5-mingw/i686-w64-mingw32/lib",
+						"-lmingw32",
+						"-lSDL2main",
+						"-lSDL2",
+						"-lopengl32",
+						"&&",
+						"$file_path/$file_base_name"
+					],
+					"name": "Run",
+					"shell": true
+				}
+				,
+				{
+					"cmd":
+					[
+						"g++",
+						"$file",
+						"-o",
+						"$file_base_name",
+						"src/*.cpp",
+						"-IC:/Libraries/SDL2-2.0.5-mingw/i686-w64-mingw32/include",
+						"-LC:/Libraries/SDL2-2.0.5-mingw/i686-w64-mingw32/lib",
+						"-lmingw32",
+						"-lSDL2main",
+						"-lSDL2",
+						"-lopengl32",
+						"&&",
+						"$file_path/$file_base_name"
+					],
+					"name": "Single File",
+					"shell": true
+				}
+			],
+			"working_dir": "${file_path}"
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	]
+}
