@@ -16,6 +16,11 @@ Key::Key(Vector2 position, int width, int height, int color[3]) {
 	this->color[2] = color[2];
 }
 
+void Key::createStream(const char* note, float semitone) {
+	stream = audio.createStreamFromFile(note);
+	audio.changeStreamPitchSemitone(stream, semitone);
+}
+
 void Key::setKeyboardKey(SDL_Keycode keycode) {
 	linkedKeyboardKey = keycode;
 }
@@ -29,9 +34,15 @@ bool Key::checkPress() {
 }
 
 void Key::handlePress() {
+	if (isPressed == false) {
+		audio.playStream(stream);
+	}
+
 	isPressed = true;
 
 	if (!input.checkKeyDown(linkedKeyboardKey)) {
+		audio.stopStream(stream);
+		audio.resetStream(stream);
 		isPressed = false;
 	}
 }
