@@ -435,7 +435,7 @@
 			"file": "engine.h",
 			"settings":
 			{
-				"buffer_size": 886,
+				"buffer_size": 907,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -444,43 +444,25 @@
 			"file": "engine.cpp",
 			"settings":
 			{
-				"buffer_size": 2333,
+				"buffer_size": 2489,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/core/audio.cpp",
+			"file": "src/joiner.h",
 			"settings":
 			{
-				"buffer_size": 977,
+				"buffer_size": 218,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/key.h",
+			"file": "src/joiner.cpp",
 			"settings":
 			{
-				"buffer_size": 699,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/piano.cpp",
-			"settings":
-			{
-				"buffer_size": 4792,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/key.cpp",
-			"settings":
-			{
-				"buffer_size": 1898,
+				"buffer_size": 383,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -695,23 +677,27 @@
 	"expanded_folders":
 	[
 		"/C/Projects/Piano",
-		"/C/Projects/Piano/src",
-		"/C/Projects/Piano/src/core"
+		"/C/Projects/Piano/src"
 	],
 	"file_history":
 	[
-		"/C/Projects/Piano/src/core/audio.h",
+		"/C/Projects/Piano/src/gui.cpp",
+		"/C/Projects/Piano/src/gui.h",
+		"/C/Libraries/imgui/examples/sdl_opengl2_example/main.cpp",
+		"/C/Projects/Piano/project.sublime-project",
+		"/C/Projects/Piano/engine.cpp",
+		"/C/Projects/Piano/src/imgui/imgui_impl_sdl_gl2.cpp",
 		"/C/Projects/Piano/engine.h",
+		"/C/Projects/Piano/src/key.cpp",
+		"/C/Projects/Piano/src/piano.cpp",
+		"/C/Projects/Piano/src/key.h",
+		"/C/Projects/Piano/src/core/audio.cpp",
+		"/C/Projects/Piano/src/core/audio.h",
 		"/C/Projects/Piano/src/core/input.cpp",
 		"/C/Projects/Piano/src/core/input.h",
-		"/C/Projects/Piano/src/key.h",
 		"/C/Projects/Piano/src/joiner.cpp",
 		"/C/Projects/Piano/main.cpp",
-		"/C/Projects/Piano/engine.cpp",
-		"/C/Projects/Piano/project.sublime-project",
-		"/C/Projects/Piano/src/piano.cpp",
 		"/C/Projects/Piano/src/piano.h",
-		"/C/Projects/Piano/src/key.cpp",
 		"/C/Projects/Cereal/cereal_nodiv.py",
 		"/C/Libraries/bass24/c/bass.h",
 		"/C/Users/WilliamLew/.ssh/id_rsa",
@@ -822,16 +808,11 @@
 		"/C/Projects/Mustard/src/chunder.h",
 		"/C/Projects/Mustard/src/rock.h",
 		"/C/Users/WilliamLew/Desktop/cmu/b.py",
-		"/C/Projects/Mustard/Separate Axis Theorem/src/vrectangle.cpp",
-		"/C/Users/WilliamLew/Desktop/test.bmp",
-		"/C/Users/WilliamLew/Desktop/cmu/a.py",
-		"/C/Users/WilliamLew/Desktop/cmu/lab2.py",
-		"/C/Users/WilliamLew/Desktop/Website/Pixel-Noise/Pixel Noise/Pixel Noise/Main.cpp",
-		"/C/Projects/ML-Perceptron/network_min.py"
+		"/C/Projects/Mustard/Separate Axis Theorem/src/vrectangle.cpp"
 	],
 	"find":
 	{
-		"height": 47.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -951,7 +932,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -960,78 +941,21 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 886,
+						"buffer_size": 907,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								288,
-								288
+								293,
+								293
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/C++/C++.sublime-syntax",
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "engine.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2333,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								475,
-								475
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/core/audio.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 977,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								471,
-								471
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1041,20 +965,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "src/key.h",
+					"buffer": 1,
+					"file": "engine.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 699,
+						"buffer_size": 2489,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								349,
-								349
+								298,
+								298
 							]
 						],
 						"settings":
@@ -1070,61 +994,59 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "src/piano.cpp",
+					"buffer": 2,
+					"file": "src/joiner.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4792,
+						"buffer_size": 218,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3951,
-								3951
+								61,
+								61
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2544.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "src/key.cpp",
+					"buffer": 3,
+					"file": "src/joiner.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1898,
+						"buffer_size": 383,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								471,
-								475
+								366,
+								366
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1458.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1132,11 +1054,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 47.0
+		"height": 23.0
 	},
 	"input":
 	{
-		"height": 417.0
+		"height": 91.0
 	},
 	"layout":
 	{
@@ -1163,7 +1085,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 229.0
+		"height": 152.0
 	},
 	"output.find_results":
 	{
@@ -1173,7 +1095,7 @@
 	"project": "project.sublime-project",
 	"replace":
 	{
-		"height": 86.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1223,7 +1145,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 342.0,
+	"side_bar_width": 174.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

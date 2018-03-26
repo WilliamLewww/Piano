@@ -1,5 +1,6 @@
 #pragma once
 #include "core\configuration.h"
+#include "gui.h"
 #include "piano.h"
 
 class Joiner {
