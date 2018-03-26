@@ -3,7 +3,7 @@
 Joiner joiner;
 
 void Joiner::initialize() {
-	piano.generateKeys();
+	piano.generateScale();
 }
 
 void Joiner::update(int elapsedTime) {
