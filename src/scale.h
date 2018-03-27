@@ -21,6 +21,9 @@ private:
 	void linkWhiteKeys();
 	void linkBlackKeys();
 public:
+	void setPosition(Vector2 position);
+	Vector2 getPosition();
+	
 	void setEighth(bool eighth);
 	void setSecondary(bool secondary);
 	void setFile(const char* file);

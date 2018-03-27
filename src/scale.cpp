@@ -153,3 +153,11 @@ void Scale::draw() {
 		key.draw();
 	}
 }
+
+void Scale::setPosition(Vector2 position) {
+	this->position = position;
+}
+
+Vector2 Scale::getPosition() {
+	return position;
+}

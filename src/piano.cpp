@@ -1,16 +1,20 @@
 #include "piano.h"
 
 void Piano::update() {
-	scale.update();
+	for (Scale &scale : scales) {
+		scale.update();
+	}
 }
 
 void Piano::draw() {
-	scale.draw();
+	for (Scale scale : scales) {
+		scale.draw();
+	}
 }
 
-void Piano::generateScale() {
-	scale.setEighth(true);
-	scale.setFile("c-3.wav");
-
-	scale.initialize(Vector2(configuration.getScreenWidth() / 17, 30), configuration.getScreenWidth() / 17, configuration.getScreenHeight() / 5);
+void Piano::generateScale(const char *file, bool eighth, Vector2 position, int width, int height) {
+	scales.emplace_back();
+	scales[scales.size() - 1].setEighth(eighth);
+	scales[scales.size() - 1].setFile(file);
+	scales[scales.size() - 1].initialize(position, width, height);
 }

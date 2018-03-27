@@ -6,6 +6,10 @@
 class Joiner {
 private:
 	Piano piano;
+	int guiPositionX, guiPositionY;
+	int guiWidth, guiHeight;
+
+	char guiFile[128];
 public:
 	void initialize();
 	void draw();

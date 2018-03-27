@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"gui",
+				"guiFile"
+			],
+			[
 				"key",
 				"keycode"
 			],
@@ -435,7 +439,8 @@
 			"file": "main.cpp",
 			"settings":
 			{
-				"buffer_size": 160,
+				"buffer_size": 139,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -443,7 +448,7 @@
 			"file": "src/scale.h",
 			"settings":
 			{
-				"buffer_size": 557,
+				"buffer_size": 620,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -452,7 +457,7 @@
 			"file": "src/scale.cpp",
 			"settings":
 			{
-				"buffer_size": 4316,
+				"buffer_size": 4443,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -461,7 +466,7 @@
 			"file": "src/piano.h",
 			"settings":
 			{
-				"buffer_size": 226,
+				"buffer_size": 286,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -470,7 +475,7 @@
 			"file": "src/piano.cpp",
 			"settings":
 			{
-				"buffer_size": 328,
+				"buffer_size": 448,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -485,10 +490,19 @@
 			}
 		},
 		{
+			"file": "src/joiner.h",
+			"settings":
+			{
+				"buffer_size": 298,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "src/joiner.cpp",
 			"settings":
 			{
-				"buffer_size": 384,
+				"buffer_size": 999,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -533,7 +547,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 784.0,
 		"last_filter": "git add",
 		"selected_items":
 		[
@@ -678,7 +692,7 @@
 				"Material Theme: Configuration"
 			]
 		],
-		"width": 420.0
+		"width": 840.0
 	},
 	"console":
 	{
@@ -707,6 +721,7 @@
 	],
 	"file_history":
 	[
+		"/C/Projects/Piano/src/joiner.cpp",
 		"/C/Projects/Piano/src/piano.cpp",
 		"/C/Projects/Piano/main.cpp",
 		"/C/Projects/Piano/engine.cpp",
@@ -717,7 +732,6 @@
 		"/C/Projects/Piano/src/core/audio.h",
 		"/C/Projects/Piano/src/core/input.cpp",
 		"/C/Projects/Piano/src/core/input.h",
-		"/C/Projects/Piano/src/joiner.cpp",
 		"/C/Projects/Piano/project.sublime-project",
 		"/C/Projects/Piano/src/piano.h",
 		"/C/Projects/Cereal/cereal_nodiv.py",
@@ -838,7 +852,7 @@
 	],
 	"find":
 	{
-		"height": 47.0
+		"height": 82.0
 	},
 	"find_in_files":
 	{
@@ -960,7 +974,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -969,15 +983,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 160,
+						"buffer_size": 139,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								160,
-								160
+								35,
+								35
 							]
 						],
 						"settings":
@@ -988,7 +1002,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -997,15 +1011,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 557,
+						"buffer_size": 620,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								355,
-								355
+								310,
+								310
 							]
 						],
 						"settings":
@@ -1016,7 +1030,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -1025,15 +1039,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4316,
+						"buffer_size": 4443,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								574,
-								574
+								4441,
+								4441
 							]
 						],
 						"settings":
@@ -1041,16 +1055,16 @@
 							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1302.0,
+						"translation.y": 3618.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -1059,15 +1073,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 226,
+						"buffer_size": 286,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								124,
-								124
+								130,
+								130
 							]
 						],
 						"settings":
@@ -1079,7 +1093,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -1088,15 +1102,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 328,
+						"buffer_size": 448,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								83,
-								83
+								446,
+								446
 							]
 						],
 						"settings":
@@ -1124,8 +1138,8 @@
 						"selection":
 						[
 							[
-								906,
-								906
+								366,
+								366
 							]
 						],
 						"settings":
@@ -1134,7 +1148,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 744.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1142,19 +1156,19 @@
 				},
 				{
 					"buffer": 6,
-					"file": "src/joiner.cpp",
+					"file": "src/joiner.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 384,
+						"buffer_size": 298,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								131,
-								131
+								181,
+								181
 							]
 						],
 						"settings":
@@ -1165,7 +1179,36 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/joiner.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 999,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								778,
+								778
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
